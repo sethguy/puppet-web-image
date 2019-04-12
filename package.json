@@ -1,0 +1,24 @@
+{
+    "name": "screenshot-as-a-service",
+    "version": "1.1.2",
+    "description": "Starter Kit for running Headless-Chrome by Puppeteer on AWS Lambda",
+    "dependencies": {
+        "@serverless-chrome/lambda": "^1.0.0-55",
+        "chrome-launcher": "^0.10.5",
+        "gm": "^1.23.1",
+        "image-downloader": "^3.4.1",
+        "js-base64": "^2.5.1",
+        "puppeteer-core": "^1.14.0",
+        "superagent": "^5.0.2",
+        "tar": "^4.0.1"
+    },
+    "devDependencies": {
+        "aws-sdk": "^2.358.0",
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.6.0",
+        "eslint": "^4.6.1",
+        "eslint-config-google": "^0.9.1",
+        "serverless-hooks-plugin": "^1.1.0",
+        "serverless-plugin-chrome": "^1.0.0-55"
+    }
+}
