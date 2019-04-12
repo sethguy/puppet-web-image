@@ -4,7 +4,7 @@ const puppeteer = require("puppeteer-core");
 
 const { takeScreenshot } = require("./takeScreenshot.js");
 
-const handler = async (event, context, callback) => {
+const handler = async (event, context) => {
     // // For keeping the browser launch
     context.callbackWaitsForEmptyEventLoop = false;
     const chrome = await getChrome();
@@ -37,14 +37,9 @@ exports.handler = handler;
 
 const event = {
     queryStringParameters: {
-        url: 'https://medium.muz.li/weekly-design-inspiration-201-b0ec904c2f8d'
+        url: 'http://localhost:3000', // 'https://medium.muz.li/weekly-design-inspiration-201-b0ec904c2f8d'
     }
 }
-
 const context = {};
-const callback = (response) => {
-    console.log("TCL: callback -> response", response)
-}
-
 
 const result = handler(event, context, callback);
